@@ -9,9 +9,12 @@ def map(array)
   new
 end
 
-def reduce(array, starting_point)
+def reduce(array, starting_point=0)
   total = starting_point
   counter = 0 
   while counter < array.length do 
     total = yield(total(counter))
+    counter += 1 
+  end 
+  total
 end
