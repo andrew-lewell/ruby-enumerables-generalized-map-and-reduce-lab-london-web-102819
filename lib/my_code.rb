@@ -10,5 +10,8 @@ def map(array)
 end
 
 def reduce(array, starting_point)
-  
+  total = starting_point
+  counter = 0 
+  while counter < array.length do 
+    total =
 end
