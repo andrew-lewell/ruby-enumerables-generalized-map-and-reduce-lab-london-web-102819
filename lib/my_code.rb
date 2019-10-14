@@ -3,10 +3,12 @@ def map(array)
   new = []
   counter = 0 
   while counter < array.length do 
-    yield
+    new.push(yield(array[counter]))
     counter += 1
   end 
   new
 end
 
-map(array) { |i| i * -1 }
+def reduce
+
+end
