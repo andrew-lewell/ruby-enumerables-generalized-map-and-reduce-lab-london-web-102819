@@ -10,7 +10,7 @@ def map(array)
 end
 
 def reduce(array, starting_point = 0)
-  if starting_point
+  if starting_point != 0 
   total = starting_point
   counter = 0 
   while counter < array.length do 
